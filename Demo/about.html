@@ -5,28 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1>Taskat</h1>
-        <img alt="Taskat logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf9wJ5195hpSJ5kLI_rBR7YCpJCMM6ypGQ1w&usqp=CAU">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Newest</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <header class="header-body"> 
+        <img alt="Taskat logo" src="https://i.pinimg.com/236x/5c/1e/45/5c1e454392a12633a48ce42dc14c4059.jpg" 
+        style="position:absolute;height: 75px;width:75px;">
+        <h1 class="a">Taskat</h1>
+        <ul class="b">
+            <li class="c"><a href="#">Home</a></li>
+            <li class="c"><a href="#">Newest</a></li>
+            <li class="c"><a href="./about.html">About</a></li>
+            <li class="c"><a href="#">Contact Us</a></li>
         </ul>
     </header>
     
-    <main>
-        <section>
-            <h1>Rawzi Homran</h1>
+    <main style="height:550px;">
+        <section class="one">
             <img alt="Rawzi's photo" src="https://scontent.famm2-3.fna.fbcdn.net/v/t39.30808-6/251582963_1704691569734259_3457156960327312117_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG3iT3lpVexIgZ9ZcXgZHOmedG-t5N9ttp50b63k3222i0c18AbAYlJ2dIbfjrIuWNqtCOcv9JHTdO-0FmiXoBO&_nc_ohc=21ms7epWJK8AX-drUcR&_nc_zt=23&_nc_ht=scontent.famm2-3.fna&oh=00_AT9q3Gt2DeAneGqiqFIlexKDFbjnbLbHjHSI_7d5JNWcwQ&oe=61EB7CC6">
-            <p>This is Rawzi, I'm learning programming at LTUC</p>
+            <div class="child">
+                <h1>Rawzi Homran</h1>
+                <p>This is Rawzi, I'm learning programming at LTUC</p>
+            </div>
         </section>
 
-        <section>
-            <p>This section for register your information, please make sure to input all fields correctly.</p>>
+        <section class="two">
+            <p>Contact with me</p>
             <form>
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" placeholder="Ahmad"><br>
@@ -35,24 +39,23 @@
                 <label for="email">Enter your email:</label>
                 <input type="email" id="email" name="email" placeholder="ahmadAli@yahoo.com"><br><br>
                 <label for="message">Write a message:</label><br>
-                <textarea name="message" rows="10" cols="30">
+                <textarea name="message" rows="10" cols="30" style="height: 50px;">
                     
                 </textarea><br>
-                <input type="submit" value="Submit">
+                <input class="button" type="submit" value="Submit" >
               </form>
 
         </section>
     </main>
 
-    <footer>
-        <p><span>&#169</span> Copyright 2022 Protect My Work Limited. All Rights Reserved.</p>
-        <div> Mecca Street,Amman,Jordan</div>
-        <div>Contact us:
-            <ul>
+    <footer class="footer-body">
+        <p class="c"><span>&#169</span> Copyright 2022 Protect My Work Limited. All Rights Reserved.</p>
+        
+            <ul class="d"> Contact us:
                 <li>Tel: 06 552 4248</li>
                 <li>Email: taskatjo@yahoo.com</li>
+                <li>Mecca Street,Amman,Jordan</li>
             </ul>
-        </div>
     </footer>
 </body>
 </html>
