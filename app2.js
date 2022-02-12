@@ -2,11 +2,11 @@ var array = [];
 
 function UserLiving() {
     var userHome = prompt("Do you live in Jordan?");
-    userHome.toLowerCase();
-    if (userHome === "yes" || userHome === "y") {
-        array.push(userHome);
-    } else if (userHome === "No" || userHome === "n") {
-        array.push(userHome);
+    let a = userHome.toLowerCase();
+    if (a === "yes" || a === "y") {
+        array.push(a);
+    } else if (a === "no" || a === "n") {
+        array.push(a);
     }
     else {
         array.push('invalid');
@@ -17,11 +17,11 @@ function UserLiving() {
 
 function UserStudent() {
     var userStudy = prompt("Are you still studing?");
-    userStudy.toLowerCase();
-    if (userStudy === "yes" || userStudy === "y") {
-        array.push(userStudy);
-    } else if (userStudy === "No" || userStudy === "n") {
-        array.push(userStudy);
+    let a =userStudy.toLowerCase();
+    if (a === "yes" || a === "y") {
+        array.push(a);
+    } else if (a === "no" || a === "n") {
+        array.push(a);
     }
     else {
         array.push('Invalid');
@@ -31,11 +31,11 @@ function UserStudent() {
 
 function UserRelation() {
     var userSingle = prompt("Are you single?");
-    userSingle.toLowerCase();
-    if (userSingle === "yes" || userSingle === "y") {
-        array.push(userSingle);
-    } else if (userSingle === "no" || userSingle === "n") {
-        array.push(userSingle);
+    let a =userSingle.toLowerCase();
+    if (a === "yes" || a === "y") {
+        array.push(a);
+    } else if (a === "no" || a === "n") {
+        array.push(a);
     }
     else {
         array.push('Invalid');
@@ -44,7 +44,9 @@ function UserRelation() {
 }
 
 function printArray(arr) {
-    return console.log(arr);
+    for( let i=0 ; i < arr.length;i++){
+        console.log(arr[i]);
+    }
 }
 
 UserLiving()
